@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1 class="text-center">Bienvenue sur le site web de Baptiste Fremaux</h1>
+
+
+<h6 class="text-center">ici vous trouverez toute ma vie et comme je sais pas quoi mettre pour remplir ce paragraphe
+  j'écris de la merde</h6>
+
+<div class="text-center">Dans cette page vous trouverez mes différents projets personnels, mes compétences, mes
+  experiences pro ainsi que mes
+  réseaux, à savoir que j'ai développé ce site web à la main en angular
+</div>
+<div class="block-title">
+  <span>Experiences professionels:</span>
+</div>
+<div class="block">
+  <article class="card card_itesoft">
+    <div class="card_content">
+      <h3 class="card_title">Itesoft</h3>
+      <span class="card_subtitle">Master en informatique en alternance</span>
+      <p class="card_description">Programmation web (Angular,Node js, Angular js, Protractor)
+      </p>
+    </div>
+  </article>
+  <article class="card card_orange">
+    <div class="card_content">
+      <h3 class="card_title">Orange</h3>
+      <span class="card_subtitle">Licence Pro CART en alternance</span>
+      <p class="card_description">Poste Pilote d'Activité Client et Réseaux chez Orange, Etudes de
+        dossier,contact client, pilotage des dossiers.
+      </p>
+    </div>
+  </article>
+  <article class="card card_auvergne">
+    <div class="card_content">
+      <h3 class="card_title">Conseil Régional</h3>
+      <span class="card_subtitle">Licence Pro CART en alternance</span>
+      <p class="card_description">Emploi de courte durée, préparation
+        étiquetage et distribution des nouveaux manuels scolaires environ 4000
+        manuels à 3 personnes.
+
+      </p>
+    </div>
+  </article>
+  <article class="card card_enedis">
+    <div class="card_content">
+      <h3 class="card_title">Enedis</h3>
+      <span class="card_subtitle">Stage DUT réseaux et télécommunication</span>
+      <p class="card_description">Stage en développement web, dans le service prévention de l’entreprise
+      </p>
+    </div>
+  </article>
+</div>
+<div class="block-title">
+  Experiences pro
+</div>
+<div style="gap:5px" *ngFor="let exp of listOfExp; index as i; first as isFirst" class="block"
+     [ngClass]="{'firstBlock':i==0,'lastBlock':i==exp.length-1}"> {{exp}}
+  <div>
+    <span class="fa fa-star" [ngClass]="{'checked':isChecked(exp,1)}"></span>
+    <span class="fa fa-star" [ngClass]="{'checked':isChecked(exp,2)}"></span>
+    <span class="fa fa-star" [ngClass]="{'checked':isChecked(exp,3)}"></span>
+    <span class="fa fa-star" [ngClass]="{'checked':isChecked(exp,4)}"></span>
+    <span class="fa fa-star" [ngClass]="{'checked':isChecked(exp,5)}"></span>
+  </div>
+</div>
+<!--<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">-->
+<!--  <div class="carousel-inner">-->
+<!--    <div class="carousel-item active">-->
+<!--      <img src="" class="d-block w-100" alt="...">-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img src="..." class="d-block w-100" alt="...">-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img src="..." class="d-block w-100" alt="...">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
